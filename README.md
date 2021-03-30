@@ -1,14 +1,16 @@
-# macOS_bluetooth_debugger
+# bluetooth_debugger
 
 #### Technologies: Python, Terminal
 
-. 
+A simple CLI script that automates the deletion of the macOS auto-generated file `com.apple.Bluetooth.plist`, which often causes a corruption in the connection between macOS machines and its Bluetooth devices. 
 
-Through the use of `localstorage` and `DOM manipulation`, `checkedin.` enables users to submit a contact that are due for a check-in and, upon page-refresh, update each contact's `daysLeft` variable to indicate whether the check-in is due/past-due, and/or signal how many days are left between the check-in date and the current date of browser session. 
+While one can certainly execute the debug manually through the GUI (see [MANUAL_DEBUG_INSTRUCTIONS.md](https://github.com/jinyoungch0i/bluetooth_debugger/blob/master/MANUAL_DEBUG_INSTRUCTIONS.md), this script aims to automate the process so that--upon successfully following the `necessary steps` outlined in the `Installation Guide`-- the only thing that they will have to do is run a single command in the Terminal and reboot their Mac. 
 
-To make the most out of `checkedin.` it is encouraged to bookmark the [URL](https://jinyoungch0i.github.io/checkedin./) for ease of access, and to run it on a Chromium-based browser (such as Google Chrome, Microsoft Edge, or [Brave](https://brave.com/))
+I found out about this tedius problem while working with my daily driver, logitech m557, which would sporadically become laggy after a certain period of bluetooth connection. 
 
-[Live Demo](https://jinyoungch0i.github.io/checkedin./) & [Source Code](https://github.com/jinyoungch0i/checkedin.)
+While looking for a problem, I came across this discussion 
+
+[Inspiration](https://discussions.apple.com/thread/4969915?answerId=22070560022#22070560022) & [Source Code](https://github.com/jinyoungch0i/checkedin.)
 
 
 Preface: This script is going to require you to first enable Full Disk Access to Terminal,
