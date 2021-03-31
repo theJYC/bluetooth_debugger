@@ -26,11 +26,11 @@ Open up the Terminal, navigate to a directory that you'd like to save this progr
 
 ## Execution
 
-1) Once successfully cloned, `right-click` on the `mac_bluetooth_debugger`folder icon, and select `New Terminal at Folder` from the dropdown. 
+1) Once the repository is successfully cloned, `right-click` on the `mac_bluetooth_debugger`folder icon, and select `New Terminal at Folder` from the dropdown. 
 
 2) Within the Terminal window, type in the following command:
 
-`sudo python bluetooth_debugger.py`  <sup>?</sup>
+`sudo python bluetooth_debugger.py`
 
 3) Type in your Mac password when prompted, then press `enter (↵)`.
 
@@ -39,4 +39,4 @@ Open up the Terminal, navigate to a directory that you'd like to save this progr
 `sudo shutdown -r now`
 
 
-<sup>?</sup>  *`sudo` enables you (the non-Admin user) to perform tasks that, by default, require Admin Permission (e.g. deleting a system-generated file). `sudo` bypasses the default admin-lock via performing tasks as the root user*
+*Note: `sudo` enables you (the non-Admin user) to perform tasks that, by default, require Admin Permission (e.g. deleting a system-generated file). `sudo` bypasses the default admin-lock via performing tasks as the root user*
