@@ -2,7 +2,7 @@
 
 **Technologies: Python, Terminal, Git (for Installation)**
 
-A simple Python program that automates the deletion of the macOS auto-generated file `com.apple.Bluetooth.plist`, which often causes connection issues (read: mouse lags, inability to pair) between your Mac and its Bluetooth devices. 
+A simple Python program that automates the deletion of the macOS auto-generated file `com.apple.Bluetooth.plist`, which often causes connection issues (**read**: mouse lag, pairing failure) between your Mac and its Bluetooth devices. 
 
 In combining the Python script with its accompanying CLI guide, this program aims to automate the tedious process of routinely removing the abovementioned file, which would otherwise be performed over several stages via manual GUI interaction. 
 
@@ -10,17 +10,17 @@ In combining the Python script with its accompanying CLI guide, this program aim
 
 ## Pre-Installation
 
-0.1) Ensure that you have already downloaded `Git`, for which you could run the following command in the Terminal: 
+Ensure that you have already downloaded `Git`, for which you could run the following command in the Terminal: 
 
 `git --version`
 
 If you don’t have it installed already, it will prompt you to install it.
 
-0.2) With regards to Python, Macs come with it pre-installed and there is no need to download the latest version of Python given that this script can be run on earlier versions. 
+With regards to Python, Macs come with it pre-installed and there is no need to download the latest version of Python given that this script can be run on earlier versions. 
 
 ## Installation
 
-0.3) Open up the Terminal, navigate to a directory that you'd like to save this program within your local machine (e.g. `cd Desktop/`) and clone this remote repository by typing in the following command:
+Open up the Terminal, navigate to a directory that you'd like to save this program within your local machine (e.g. `cd Desktop/`) and clone this remote repository by typing in the following command:
 
 `git clone git@github.com:jinyoungch0i/mac_bluetooth_debugger.git`
 
