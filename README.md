@@ -1,36 +1,31 @@
 # mac_bluetooth_debugger
 
-**Technologies: Python, Terminal**
+**Technologies: Python, Terminal, Git (for Installation)**
 
-A simple CLI script that automates the deletion of the macOS auto-generated file `com.apple.Bluetooth.plist`, which often causes a corruption in the connection between macOS machines and its paired Bluetooth devices. 
+A simple Python script that automates the deletion of the macOS auto-generated file `com.apple.Bluetooth.plist`, which often causes connection issues (read: mouse lags, inability to pair) between your Mac and its Bluetooth devices. 
 
-This Python script of 8 lines and its accompanying CLI guide aims to automate the tedius process of routinely removing the abovementioned file via manual GUI interaction. 
-
-Upon running `sudo python bluetooth_debugger.py`, the user will only be required to reboot their machine to complete the debug process.
+In combining the Python script with its accompanying CLI guide, this program aims to automate the tedious process of routinely removing the abovementioned file, which would otherwise be performed via manual GUI interaction. 
 
 [Inspiration](https://discussions.apple.com/thread/4969915?answerId=22070560022#22070560022) & [Source Code](https://github.com/jinyoungch0i/checkedin.)
 
 ## Installation
 
-0-1) Ensure that you have already downloaded `git`, for which the installation for macOS is given: 
+0-1) Ensure that you have already downloaded `git`, for which the installation for macOS is detailed as: 
 
 ```
 Installing on macOS
-There are several ways to install Git on a Mac. The easiest is probably to install the Xcode Command Line Tools. On Mavericks (10.9) or above you can do this simply by trying to run git from the Terminal the very first time.
+There are several ways to install Git on a Mac [...] On Mavericks (10.9) or above you can do this simply by trying to run git from the Terminal the very first time.
 ```
 
 `git --version`
 
-```
-If you don’t have it installed already, it will prompt you to install it.
+`If you don’t have it installed already, it will prompt you to install it.`
 
-If you want a more up to date version, you can also install it via a binary installer. A macOS Git installer is maintained and available for download at the Git website, at https://git-scm.com/download/mac.
-```
 Source: [git-scm.com](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
-*Side note: macOS comes with Python pre-installed, and there is no need to download Python given that this script does not make use of the latest Python 3 syntax.* 
+*Side note: macOS comes with Python pre-installed, and there is no need to download Python individually given that this script does not make use of the latest Python 3 syntax.* 
 
-0-2) Navigate to a desired directory within your local machine (e.g. `Desktop/`) and clone this repository by typing in the command in the Terminal window:
+0-2) Open up the Terminal, navigate to a directory that you'd like to save this program within your local machine (e.g. `cd Desktop/`) and clone this remote repository by typing in the following command:
 
 `git clone git@github.com:jinyoungch0i/mac_bluetooth_debugger.git`
 
@@ -40,14 +35,13 @@ Source: [git-scm.com](https://git-scm.com/book/en/v2/Getting-Started-Installing-
 
 2) Within the Terminal window, type in the following command:
 
-`sudo python bluetooth_debugger.py`
+`sudo python bluetooth_debugger.py`<sup>?</sup>
 
-*Side note: `sudo` is a particular syntax that enables you (non-admin user) to perform tasks that are admin-locked by default; `sudo`, standing for `superuser do`, enables the bypass of admin permission via performing the tasks as the root user*
+3) Type in your Mac password when prompted, then press `enter (↵)`.
 
-3) When prompted to type in `Password:`, type in the `password` for the mac and press `enter`.
-
-4) reboot the mac by typing in the following command:
+4) To finish the debug, reboot the mac by typing in the following command:
 
 `sudo shutdown -r now`
 
 
+<sup>?</sup>: *`sudo` is a particular syntax that enables you (the non-Admin user) to perform tasks that, by default, require Admin Permission. `sudo`, which stands for `superuser do`, enables you to bypass the default admin-lock via performing tasks as the root user*
