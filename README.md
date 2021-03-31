@@ -42,8 +42,8 @@ N.B. Only reboot if/when the computer does not have any ongoing or unsaved proce
 
 ## Afterthought
 
-Thinking of ways to optimise `mac_bluetooth_debugger`, I was made aware that you can do everything that this Python script does directly on Terminal, in just one line!:
+Thinking of ways to optimise `mac_bluetooth_debugger`, I was made aware that you can do everything that this Python script does directly on Terminal in just one line!:
 
 `sudo rm /Library/Preferences/com.apple.Bluetooth.plist && sudo shutdown -r now`
 
-Thank you to folks at [./missing-semester](https://missing.csail.mit.edu/) for allowing me to find an even more streamlined solution! 😅
+Thank you [./missing-semester](https://missing.csail.mit.edu/) for allowing me to get comfortable with Bash scripting and letting me find an even more streamlined solution! 😅
