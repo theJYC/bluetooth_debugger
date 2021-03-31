@@ -2,11 +2,11 @@
 
 **Technologies: Python, Terminal, Git (for Installation)**
 
-A simple Python program that automates the deletion of the macOS auto-generated file `com.apple.Bluetooth.plist`, which causes connection issues (**read**: mouse lag, pairing failure) between your Mac and its Bluetooth devices. 
+A simple Python program that automates the deletion of the macOS system-generated `com.apple.Bluetooth.plist` file, which causes connection issues (**read**: mouse lag, pairing failure) between your Mac and its Bluetooth devices. 
 
-In combining the Python script with its accompanying CLI guide, this program aims to automate the tedious process of routinely removing the abovementioned file, which would otherwise be performed over several stages via manual GUI interaction. 
+This program aims to automate the tedious process of manually removing the abovementioned file via the GUI, which takes several additional steps due to the file being admin-locked by default. 
 
-[Inspiration](https://www.macbooster.net/how-to/fix-bluetooth-not-available-issue-on-macbook) (*refer to '3: Reset Bluetooth plist'*) & [Source Code](https://github.com/jinyoungch0i/mac_bluetooth_debugger/blob/master/bluetooth_debugger.py)
+[Inspiration]()& [Source Code](https://github.com/jinyoungch0i/mac_bluetooth_debugger/blob/master/bluetooth_debugger.py)
 
 ## Pre-Installation
 
@@ -39,3 +39,11 @@ Open up the Terminal, navigate to a directory that you'd like to save this progr
 `sudo shutdown -r now`
 
 N.B. Only reboot if/when the computer does not have any ongoing or unsaved processes! 🙈
+
+## Afterthought
+
+Thinking of ways to optimise `mac_bluetooth_debugger`, I was made aware that you can do everything that this Python script does directly on Terminal!:
+
+`sudo rm /Library/Preferences/com.apple.Bluetooth.plist && sudo shutdown -r now`
+
+Thank you to folks at [./missing-semester](https://missing.csail.mit.edu/) for allowing me to find an even more streamlined solution! 😅
