@@ -34,9 +34,9 @@ Open up the Terminal, navigate to a directory that you'd like to save this progr
 
 3) Type in your Mac password when prompted, then press `enter (↵)`.
 
-4) To finish the debug, reboot the mac by typing in the following command:
+4) To finish the debug, reboot the mac (only do so when the computer does not have any ongoing processes):
 
 `sudo shutdown -r now`
 
 
-<sup>?</sup>  *`sudo` is a particular syntax that enables you (the non-Admin user) to perform tasks that, by default, require Admin Permission. `sudo`, which stands for `superuser do`, enables you to bypass the default admin-lock via performing tasks as the root user*
+<sup>?</sup>  *`sudo` enables you (the non-Admin user) to perform tasks that, by default, require Admin Permission (e.g. deleting a system-generated file). `sudo` bypasses the default admin-lock via performing tasks as the root user*
