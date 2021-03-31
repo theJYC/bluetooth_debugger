@@ -6,7 +6,7 @@ A simple Python script that automates the deletion of the macOS auto-generated f
 
 In combining the Python script with its accompanying CLI guide, this program aims to automate the tedious process of routinely removing the abovementioned file, which would otherwise be performed via manual GUI interaction. 
 
-[Inspiration](https://macreports.com/fix-bluetooth-problems-in-macos-catalina/) (refer to point 7.) & [Source Code](https://github.com/jinyoungch0i/checkedin.)
+[Inspiration](https://www.macbooster.net/how-to/fix-bluetooth-not-available-issue-on-macbook) (refer to point '3: Reset Bluetooth plist') & [Source Code](https://github.com/jinyoungch0i/checkedin.)
 
 ## Installation
 
