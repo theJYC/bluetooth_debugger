@@ -2,11 +2,11 @@
 
 **Technologies: Python, Terminal, Git (for Installation)**
 
-A simple Python script that automates the deletion of the macOS auto-generated file `com.apple.Bluetooth.plist`, which often causes connection issues (read: mouse lags, inability to pair) between your Mac and its Bluetooth devices. 
+A simple Python program that automates the deletion of the macOS auto-generated file `com.apple.Bluetooth.plist`, which often causes connection issues (read: mouse lags, inability to pair) between your Mac and its Bluetooth devices. 
 
-In combining the Python script with its accompanying CLI guide, this program aims to automate the tedious process of routinely removing the abovementioned file, which would otherwise be performed via manual GUI interaction. 
+In combining the Python script with its accompanying CLI guide, this program aims to automate the tedious process of routinely removing the abovementioned file, which would otherwise be performed over several stages via manual GUI interaction. 
 
-[Inspiration](https://www.macbooster.net/how-to/fix-bluetooth-not-available-issue-on-macbook) (refer to point '3: Reset Bluetooth plist') & [Source Code](https://github.com/jinyoungch0i/checkedin.)
+[Inspiration](https://www.macbooster.net/how-to/fix-bluetooth-not-available-issue-on-macbook) (*refer to '3: Reset Bluetooth plist'*) & [Source Code](https://github.com/jinyoungch0i/mac_bluetooth_debugger/blob/master/bluetooth_debugger.py)
 
 ## Installation
 
