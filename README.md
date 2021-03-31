@@ -1,69 +1,53 @@
-# bluetooth_debugger
+# mac_bluetooth_debugger
 
-#### Technologies: Python, Terminal
+**Technologies: Python, Terminal**
 
-A simple CLI script that automates the deletion of the macOS auto-generated file `com.apple.Bluetooth.plist`, which often causes a corruption in the connection between macOS machines and its Bluetooth devices. 
+A simple CLI script that automates the deletion of the macOS auto-generated file `com.apple.Bluetooth.plist`, which often causes a corruption in the connection between macOS machines and its paired Bluetooth devices. 
 
-While one can certainly execute the debug manually through the GUI (see [MANUAL_DEBUG_INSTRUCTIONS.md](https://github.com/jinyoungch0i/bluetooth_debugger/blob/master/MANUAL_DEBUG_INSTRUCTIONS.md), this script aims to automate the process so that--upon successfully following the `necessary steps` outlined in the `Installation Guide`-- the only thing that they will have to do is run a single command in the Terminal and reboot their Mac. 
+This Python script of 8 lines and its accompanying CLI guide aims to automate the tedius process of routinely removing the abovementioned file via manual GUI interaction. 
 
-I found out about this tedius problem while working with my daily driver, logitech m557, which would sporadically become laggy after a certain period of bluetooth connection. 
-
-While looking for a problem, I came across this discussion 
+Upon running `sudo python bluetooth_debugger.py`, the user will only be required to reboot their machine to complete the debug process.
 
 [Inspiration](https://discussions.apple.com/thread/4969915?answerId=22070560022#22070560022) & [Source Code](https://github.com/jinyoungch0i/checkedin.)
 
+## Installation
 
-Preface: This script is going to require you to first enable Full Disk Access to Terminal,
-Since this automation script involves operating on a file that can only be removed via admin permission. 
+0-1) Ensure that you have already downloaded `git`, for which the installation for macOS is given: 
 
-Full Disk Access to Terminal is given via:
+```
+Installing on macOS
+There are several ways to install Git on a Mac. The easiest is probably to install the Xcode Command Line Tools. On Mavericks (10.9) or above you can do this simply by trying to run git from the Terminal the very first time.
+```
 
-System Prefences > Security & Privacy > Full Disk Access > add Terminal (which can be found in the Utilities directory within Applications)
+`git --version`
+
+```
+If you don’t have it installed already, it will prompt you to install it.
+
+If you want a more up to date version, you can also install it via a binary installer. A macOS Git installer is maintained and available for download at the Git website, at https://git-scm.com/download/mac.
+```
+Source: [git-scm.com](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+
+*Side note: macOS comes with Python pre-installed, and there is no need to download Python given that this script does not make use of the latest Python 3 syntax.* 
+
+0-2) Navigate to a desired directory within your local machine (e.g. `Desktop/`) and clone this repository by typing in the command in the Terminal window:
+
+`git clone git@github.com:jinyoungch0i/mac_bluetooth_debugger.git`
+
+## Execution
+
+1) Once successfully cloned, `right-click` on the `mac_bluetooth_debugger`folder icon, and select `New Terminal at Folder` from the dropdown. 
+
+2) Within the Terminal window, type in the following command:
+
+`sudo python bluetooth_debugger.py`
+
+*Side note: `sudo` is a particular syntax that enables you (non-admin user) to perform tasks that are admin-locked by default; `sudo`, standing for `superuser do`, enables the bypass of admin permission via performing the tasks as the root user*
+
+3) When prompted to type in `Password:`, type in the `password` for the mac and press `enter`.
+
+4) reboot the mac by typing in the following command:
+
+`sudo shutdown -r now`
 
 
-In a nutshell, this script aims to automate the removal of the file ‘com.apple.Bluetooth.plist’ which always solves the sporadic lag issue that arises with bluetooth mice and Mac OS. 
-
-First, click on Finder, and on the top navigation bar, click Go > Go To Folder (shift + command + G)…
-
-In the pop-up window: type in the following path: 
-
-/Library/Preferences
-
-Then, scroll through the list of files (arranged in alphabetical order) and find ‘com.apple.Bluetooth.plist’:
-
-`right click` on the file, click `Get Info`, then scroll to the bottom of the window to find the small lock button on the right.
-
-Click on the lock button, type password / touchID, then within `Sharing & Permissions`, change `everyone`’s `Privilege` from `Read only` to `Read & Write`.
-
-Then, open Terminal (which can either be accessed via ‘Launchpad > Utilities > Terminal’ or ‘Finder > Applications > Utilities > Terminal’)
-
-Navigate to the Preferences directory, via following command:
-
-cd /Library/Preferences
-
-(As an additional step, you could confirm that you are in the correct directory by running the ‘ls’ command, which will return a long list of items among which is ‘com.apple.Bluetooth’)
-
-Since ‘com.apple.Bluetooth.plist’ is locked for admin permission, change file ownership via following command:
-
-sudo chown <username>:admin com.apple.Bluetooth.plist
-
-(To find <username>, you can open a Finder window, then click on Go > Home to see the username on the header of the resulting finder window)
-
-Then, type in password & press `enter`. 
-
-Now, navigate to the address where `debug_bluetooth.py` was installed in your local machine. 
-(For example, if you had installed it on Desktop:)
-
-You could do it two ways: 
-
-Type in the following command in the Terminal window (replacing <username> with your username: 
-
-cd ../../Users/<username>/Desktop
-
-Then, run the command:
-
-sudo python debug_bluetooth.py
-
-Enter password when prompted.
-
-Voilá! 
