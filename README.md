@@ -1,8 +1,8 @@
-# mac_bluetooth_debugger
+# bluetooth_debugger
 
 **Technologies: Python, Terminal, Git (for Installation)**
 
-A simple Python program that automates the deletion of the macOS system-generated `com.apple.Bluetooth.plist` file, which causes connection issues (**read**: mouse lag, pairing failure) between your Mac and its Bluetooth devices. 
+A simple Python program that automates the deletion of the macOS system-generated `com.apple.Bluetooth.plist` file, which causes connection issues (**read**: mouse lag, pairing failure) between Mac computers and its paired Bluetooth devices. 
 
 This program aims to automate the tedious process of manually removing the abovementioned file via the GUI, which takes several additional steps due to the file being admin-locked by default. 
 
@@ -22,11 +22,11 @@ With regards to Python, Macs come with it pre-installed and there is no need to 
 
 Open up the Terminal, navigate to a directory that you'd like to save this program within your local machine (e.g. `cd Desktop/`) and clone this remote repository by typing in the following command:
 
-`git clone git@github.com:jinyoungch0i/mac_bluetooth_debugger.git`
+`git clone git@github.com:jinyoungch0i/bluetooth_debugger.git`
 
 ## Execution
 
-1. Once the repository is successfully cloned, `right-click` on the `mac_bluetooth_debugger`folder icon, and select `New Terminal at Folder` from the dropdown. 
+1. Once the repository is successfully cloned, `right-click` on the `bluetooth_debugger`folder icon, and select `New Terminal at Folder` from the dropdown. 
 
 2. Within the Terminal window, type in the following command:
 
@@ -42,7 +42,7 @@ N.B. Only reboot if/when the computer does not have any ongoing or unsaved proce
 
 ## Afterthought
 
-Thinking of ways to optimise `mac_bluetooth_debugger`, I was made aware that you can do everything that this Python script does directly on Terminal in just one line!:
+Thinking of ways to optimise `bluetooth_debugger`, I was made aware that you can do everything that this Python script does directly on Terminal in just one line!:
 
 `sudo rm /Library/Preferences/com.apple.Bluetooth.plist && sudo shutdown -r now`
 
