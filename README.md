@@ -38,7 +38,7 @@ Open up the Terminal, navigate to a directory that you'd like to save this progr
 
 `sudo shutdown -r now`
 
-N.B. Only reboot if/when the computer does not have any ongoing or unsaved processes! 🙈
+N.B. Only reboot if/when the computer does not have any ongoing or unsaved processes!
 
 ## Afterthought
 
@@ -46,4 +46,4 @@ Thinking of ways to optimise `bluetooth_debugger`, I was made aware that you can
 
 `sudo rm /Library/Preferences/com.apple.Bluetooth.plist && sudo shutdown -r now`
 
-All credits go to [./missing-semester](https://missing.csail.mit.edu/) for allowing me to get more comfortable with bash scripting and letting me eventually find a super streamlined solution! 😅
+All credits go to [./missing-semester](https://missing.csail.mit.edu/) for allowing me to get more comfortable with bash scripting and letting me eventually find a super streamlined solution! 🙈
