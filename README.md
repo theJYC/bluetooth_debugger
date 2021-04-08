@@ -6,7 +6,7 @@ A simple Python program that automates the deletion of the macOS system-generate
 
 This program aims to automate the tedious process of manually removing the abovementioned file via the GUI, which takes several additional steps due to the file being admin-locked by default. 
 
-[Inspiration](https://stackoverflow.com/questions/20553957/how-can-i-clear-the-corebluetooth-cache-on-macos) & [Source Code](https://github.com/jinyoungch0i/mac_bluetooth_debugger/blob/master/bluetooth_debugger.py)
+[Context](https://stackoverflow.com/questions/20553957/how-can-i-clear-the-corebluetooth-cache-on-macos) & [Source Code](https://github.com/jinyoungch0i/mac_bluetooth_debugger/blob/master/bluetooth_debugger.py)
 
 ## Pre-Installation
 
