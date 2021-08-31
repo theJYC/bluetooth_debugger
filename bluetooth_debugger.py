@@ -10,5 +10,6 @@ os.chdir(path)
 for i in os.listdir(path):
     if (i == 'com.apple.Bluetooth.plist'):
         os.unlink(i)
+        print("corrupt file removed. Restart your computer.")
     else:
         pass

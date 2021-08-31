@@ -16,6 +16,6 @@ if (fs.existsSync(absolutePath)) {
         if (err) {
             return console.log(err)
         }
-        console.log("file deleted. Restart your computer")
+        console.log("Corrupt file removed. Restart your computer.")
     })
 }
