@@ -6,8 +6,8 @@
 path=/Library/Preferences/
 file=com.apple.Bluetooth.plist
 
-if [$path$file]; then
-    rm $path$file
+if ["${path}${file}"]; then
+    rm "${path}${file}"
     echo "Corrupt file removed."
     # restarting the computer
     shutdown -r now
