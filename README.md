@@ -4,7 +4,7 @@
 
 A simple automation script that removes the macOS system-generated `com.apple.Bluetooth.plist` file, which causes connection issues (**read**: mouse lag, pairing failure) between Mac computers and its paired Bluetooth devices. 
 
-This program aims to automate the tedious process of manually removing the abovementioned file via the GUI, which takes several additional steps due to the file being admin-locked by default. 
+This program, implemented in Bash, Node.js, and Python, aims to automate the tedious process of manually removing the abovementioned file via the GUI, which takes several additional steps due to the file being admin-locked by default. 
 
 [Context](https://stackoverflow.com/questions/20553957/how-can-i-clear-the-corebluetooth-cache-on-macos) & [Source Code](https://github.com/jinyoungch0i/mac_bluetooth_debugger/blob/master/bluetooth-debug.sh)
 
@@ -41,7 +41,7 @@ Since this script is implemented in three different options:
 - b) `sudo node ./bluetoothDebugger.js`
 - c) `sudo python ./bluetooth_debugger.py`
 
-N.B. Since each of the files are just different ways of implementing the same functionality, there is no need to run all three commands. 
+N.B. Each of the files is just a different way of implementing the same functionality; there is no need to run all three commands. 
 
 3. Type in your Mac password when prompted, then press `enter (↵)`.
 
