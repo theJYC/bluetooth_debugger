@@ -13,3 +13,5 @@ for i in os.listdir(path):
         print("corrupt file removed. Restart your computer.")
     else:
         pass
+
+print("Corrupt file has not yet been generated.")

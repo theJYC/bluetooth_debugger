@@ -19,3 +19,5 @@ if (fs.existsSync(absolutePath)) {
         console.log("Corrupt file removed. Restart your computer.")
     })
 }
+
+console.log("Corrupt file has not yet been generated.")
