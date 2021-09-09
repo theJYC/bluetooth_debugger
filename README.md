@@ -37,9 +37,9 @@ Since this script is implemented in three different options:
 
 2. Within the Terminal window, type in **one** of the following commands:
 
-a) `sudo ./bluetooth-debug.sh`
-b) `sudo node ./bluetoothDebugger.js`
-c) `sudo python ./bluetooth_debugger.py`
+- a) `sudo ./bluetooth-debug.sh`
+- b) `sudo node ./bluetoothDebugger.js`
+- c) `sudo python ./bluetooth_debugger.py`
 
 N.B. Since each of the files are just different ways of implementing the same functionality, there is no need to run all three commands. 
 

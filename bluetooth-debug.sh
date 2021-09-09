@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#navigate to project dir in Terminal,
-#and run command "sudo ./bluetooth-debug.sh"
+#navigate to the project directory in Terminal,
+#and run command "sudo ./bluetooth-debug.sh" [see below]
 
 path=/Library/Preferences/
 file=com.apple.Bluetooth.plist
@@ -9,8 +9,12 @@ file=com.apple.Bluetooth.plist
 if [$path$file]; then
     rm $path$file
     echo "Corrupt file removed."
-    echo "Restarting your computer..."
-    # shutdown -r now
+    # restarting the computer
+    shutdown -r now
 else
+    # in case the file does not exist upon lookup:
     echo "Corrupt file has not yet been generated."
 fi
+
+#alternatively, you can run "sudo bash bluetooth-debug.sh"
+#whereby you can omit the relative path and just reference the .sh file
